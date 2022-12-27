@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>User facing</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+div
+{
+color: white;
+background-color: rgb(213, 251, 230);
+margin: 2px;
+font-size: 25px;
+padding: 0%;
+display: flex;
+}
+
+.item1{
+  background-color: rgb(213, 251, 230);
+  color: black;
+  margin:1px;
+  font-size: 20px;
+}
+
+.topdiv{
+background-color: rgb(142, 252, 201);
+color: black;
+margin: 2px;
+font-size: 30px ;
+padding-top: 1%;
+padding-bottom: 1%;
+text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(213, 251, 230);
+  padding: 1%;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: rgb(213, 251, 230);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: rgb(142, 252, 201);
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.home .btn{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: white;
+      color: blue;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      margin-left: 40px;
+      margin-bottom: 20px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+      font-size: 20px;
+    }
+    .home .btn:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid white;
+      transition: 0.5s all ease-out;
+    }
+    .container .btn{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: white;
+      color: blue;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+    }
+    .container .btn:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid white;
+      transition: 0.5s all ease-out;
+    }
+
+    .home .btn2{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: blue;
+      color: #fff;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      margin-left: 40px;
+      margin-bottom: 20px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+      font-size: 20px;
+    }
+    .home .btn2:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid blue;
+      transition: 0.5s all ease-out;
+    }
+    .container .btn2{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: blue;
+      color: #fff;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+    }
+    .container .btn2:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid blue;
+      transition: 0.5s all ease-out;
+    }
+
+    .item1 .btn3{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: rgb(87, 194, 93);
+      color: #fff;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      margin-left: 40px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+      font-size: 20px;
+    }
+    .item1 .btn3:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid blue;
+      transition: 0.5s all ease-out;
+    }
+    .container .btn3{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: blue;
+      color: #fff;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+    }
+    .container .btn3:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid blue;
+      transition: 0.5s all ease-out;
+    }
+
+  .custom__image-container{
+  display: center;
+  margin-right: 720px;
+  margin-left: 700px;
+}
+.custom__image-container label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+  border-radius: 5px;
+  object-fit: cover;
+  align-content: center;
+}
+
+.imgchsn{
+  font-size: 20px;
+  padding: 20px;
+  
+}
+
+.container{
+      max-width: 700px;
+      width: 30%;
+      background-color: white;
+      padding: 25px 30px;
+      border-radius: 5px;
+    }
+    .container form.details{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+    }
+    
+
+/* Style the footer */
+footer {
+  background-color: rgb(213, 251, 230);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+    <div>. . . </div>
+    <div class="topdiv"><center>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Hello {{name.username}} </center></div>
+<header>
+  <h2></h2>
+</header>
+
+<section>
+  <nav class="home">
+    <ul>
+    <button class="btn"><i class="fa fa-home"></i> Home</button>
+    <button class="btn" onClick="parent.location='/user/userprofile'"><i class="fa fa-user"></i> Profile</button>
+    <button class="btn" onclick="pointsdata()" id="x"><i class="fa fa-database" aria-hidden="true"></i>Points</button>
+    <button class="btn"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Task</button>
+    <button class="btn" onClick="parent.location='/logout/'"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</button>
+    <script>
+      function pointsdata(){
+        document.getElementById("x").innerHTML="{{points}}";
+      }
+    </script>
+    </ul>
+  </nav>
+  
+  <article>
+    {%for k in App%}
+    <div class="item1">&nbsp;&nbsp;&nbsp;<img src="{{k.AppImage}}" alt="image not found" height="100" weight="100" /> <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;{{k.AppName}}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="/user/appdetails/{{k.id}}">View in detail</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <button class="btn3">{{k.Points}}</button></h2></h2>
+    </div>
+    {%endfor%}
+  </article>
+</section>
+
+</body>
+</html>
+
+

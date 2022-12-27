@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+
+    <div>
+    <ul>
+        <center>
+    <form method="POST">
+
+    
+    {{signupform.as_table}}
+    
+
+
+
+    <tr><button type="submit">signup<button></button></tr>
+        {% csrf_token %}
+
+    </form>
+    </center>
+</ul>
+</div>
+<center>
+<div>
+{% include "baseapp/messages.html"%}
+{%block content%} {%endblock content%}
+
+</div>
+
+
+
+<h3>Already a user?<h3><a href="/login">Login</a>
+
+<center>
+</head>
+<body>
+    
+</body>
+</html>

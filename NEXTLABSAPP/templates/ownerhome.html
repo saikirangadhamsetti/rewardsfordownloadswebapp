@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Admin facing</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+div
+{
+color: white;
+background-color: rgb(213, 251, 230);
+margin: 2px;
+font-size: 25px;
+padding: 0%;
+}
+
+.topdiv{
+    background-color: rgb(142, 252, 201);
+    color: black;
+margin: 2px;
+font-size: 30px ;
+padding-top: 1%;
+padding-bottom: 1%;
+text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(213, 251, 230);
+  padding: 1%;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: rgb(213, 251, 230);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: rgb(142, 252, 201);
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.home .btn{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: white;
+      color: blue;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      margin-left: 40px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+      font-size: 20px;
+    }
+    .home .btn:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid white;
+      transition: 0.5s all ease-out;
+    }
+    .container .btn{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: white;
+      color: blue;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+    }
+    .container .btn:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid white;
+      transition: 0.5s all ease-out;
+    }
+
+    .home .btn2{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: blue;
+      color: #fff;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      margin-left: 40px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+      font-size: 20px;
+    }
+    .home .btn2:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid blue;
+      transition: 0.5s all ease-out;
+    }
+    .container .btn2{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: blue;
+      color: #fff;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+    }
+    .container .btn2:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid blue;
+      transition: 0.5s all ease-out;
+    }
+
+    form.home .btn3{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: blue;
+      color: #fff;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      margin-left: 40px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+      font-size: 20px;
+    }
+    form .btn3:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid blue;
+      transition: 0.5s all ease-out;
+    }
+    .container .btn3{
+      width: 150px;
+      height: 35px;
+      border: none;
+      background: blue;
+      color: #fff;
+      transition: 0.5s all ease-out;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: "Raleway",sans-serif;
+    }
+    .container .btn3:hover{
+      background: rgb(87, 194, 93);
+      border: 1px solid blue;
+      transition: 0.5s all ease-out;
+    }
+
+  .custom__image-container{
+  display: center;
+  margin-right: 720px;
+  margin-left: 700px;
+}
+.custom__image-container label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+  border-radius: 5px;
+  object-fit: cover;
+  align-content: center;
+}
+
+.imgchsn{
+  font-size: 20px;
+  padding: 20px;
+  
+}
+
+.container{
+      max-width: 700px;
+      width: 30%;
+      background-color: rgb(142, 252, 201);
+      padding: 25px 30px;
+      border-radius: 5px;
+    }
+    .container form.details{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+    }
+    
+
+/* Style the footer */
+footer {
+  background-color: rgb(213, 251, 230);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+    <div>. . . </div>
+    <div class="topdiv"><center>Hello Admin </center></div>
+<header>
+  <h2></h2>
+</header>
+
+<section>
+  <nav class="home">
+    <ul>
+    <button class="btn"><i class="fa fa-home"></i> Home</button>
+    <input type="button" class="btn" value="+ Add App">  
+    <form action="/owner/appslist">
+      <button type="submit" class="btn">AppsList</button>
+    </form>  
+    <form action="/owner/transactionlist">
+      <button type="submit" class="btn">Tasks Log</button>
+    </form>  
+    </ul>
+  </nav>
+  
+  <article>
+    <!-- <div class="custom__image-container">
+      <label id="add-img-label" for="add-single-img"><center>+</center>
+
+    </div> -->
+  
+    <center><input class="imgchsn"
+              type="file"
+              id="image-input"
+              name="photos"
+              accept="image/jpeg"
+              multiple
+            />
+            <form method="POST">
+              {% csrf_token %}
+              <div class="container">
+                <input style="margin-right: 10px;height: 50px;width:300px;margin-bottom: 10px;" class="details" type="text" id="imagelink" name="imagelink"  placeholder="image link"><br>
+                <input style="margin-right: 10px;height: 50px;width:300px;margin-bottom: 10px;" class="details" type="text" id="appname" name="appname"  placeholder="app name" >
+                <input style="margin-right: 10px;height: 50px;width:300px;margin-bottom: 10px;" class="details" type="text" id="applink" name="applink"  placeholder="app link"><br>
+                
+                <input style="margin-right: 10px;height: 50px;width:300px;margin-bottom: 10px;" class="details" type="text" id="appcategory" name="appcategory"  placeholder="app category" > 
+                
+                <input style="margin-right: 10px;height: 50px;width:300px;margin-bottom: 10px;" class="details" type="text" id="subcategory" name="subcategory"  placeholder="sub category" ><br>
+
+                <input style="margin-right: 10px;height: 50px;width:200px;margin-bottom: 5px;"type="integer" id="addpoints" name="addpoints" placeholder="Add points"><br>
+                
+                <button type="submit" class="btn3">Submit</button>
+  
+              </div>
+              {% csrf_token %}
+            </form></center><br>
+            
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
